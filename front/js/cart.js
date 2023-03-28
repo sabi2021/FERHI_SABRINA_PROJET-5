@@ -173,7 +173,7 @@ async function sendOrder(event) {
 
     const orderId = await makeOrder(contact, cart.items);
     
-    // TODO redirect sur la page confirmation en passant l'orderId en paramètre de l'URL
+  
     document.location.href = `./confirmation.html?orderId=${orderId}`; 
 }
 

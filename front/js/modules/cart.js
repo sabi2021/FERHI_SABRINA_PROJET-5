@@ -5,25 +5,6 @@ import {
 const loadCart = function() {
     const arrayCart = JSON.parse(localStorage.getItem("cartLS"));
 
-    // if (!arrayCart) {
-    //     return [];
-    // } else {
-    //     return arrayCart;v 
-    // }
-
-    /**
-     * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
-     */
-    // return !arrayCart ? [] : arrayCart;
-
-    /**
-     * @seehttps://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Logical_OR
-     */
-    // return arrayCart || [];
-
-    /**
-     * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing
-     */
     return arrayCart ?? [];
 }
 
